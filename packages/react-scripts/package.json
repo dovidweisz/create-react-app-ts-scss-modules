@@ -1,11 +1,14 @@
 {
   "name": "@dovidweisz/react-scripts-ts-scss-modules",
   "version": "2.15.2",
-  "description": "Configuration and scripts for Create React App with support for TypeScript and Sass.",
-  "repository": "petejkim/create-react-app-typescript-sass",
+  "description": "Configuration and scripts for Create React App with support for TypeScript, Sass, and css modules.",
+  "repository": "dovidweisz/create-react-app-typescript-scss-modules",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=6"
+  },
+  "bugs": {
+    "url": "https://github.com/dovidweisz/create-react-app-ts-scss-modules/issues"
   },
   "files": [
     "bin",
