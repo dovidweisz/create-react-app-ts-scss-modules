@@ -1,5 +1,5 @@
 {
-  "name": "@petejkim/react-scripts-ts-sass",
+  "name": "@dovidweisz/react-scripts-ts-scss-modules",
   "version": "2.15.2",
   "description": "Configuration and scripts for Create React App with support for TypeScript and Sass.",
   "repository": "petejkim/create-react-app-typescript-sass",
@@ -50,6 +50,7 @@
     "tslint": "^5.7.0",
     "tslint-config-prettier": "^1.10.0",
     "tslint-react": "^3.2.0",
+    "typings-for-css-modules-loader": "^1.7.0",
     "uglifyjs-webpack-plugin": "^1.1.8",
     "url-loader": "0.6.2",
     "webpack": "3.8.1",

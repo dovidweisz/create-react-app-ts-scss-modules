@@ -174,7 +174,7 @@ module.exports = {
             include: paths.appSrc,
             use: [
               {
-                loader: require.resolve('awesome-typescript-loader')
+                loader: require.resolve('awesome-typescript-loader'),
               },
             ],
           },
@@ -220,10 +220,15 @@ module.exports = {
             use: [
               require.resolve('style-loader'),
               {
-                loader: require.resolve('css-loader'),
+                loader: require.resolve('typings-for-css-modules-loader'),
                 options: {
                   importLoaders: 1,
                   sourceMap: true,
+                  modules: true,
+                  localIdentName: '[name]__[local]___[hash:base64:5]',
+                  sass: true,
+                  namedExport: true,
+                  camelCase: true,
                 },
               },
               {
@@ -309,7 +314,7 @@ module.exports = {
     // solution that requires the user to opt into importing specific locales.
     // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
     // You can remove this if you don't use Moment.js:
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
