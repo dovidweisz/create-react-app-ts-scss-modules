@@ -6,12 +6,12 @@ import logo from './logo.svg';
 class App extends React.Component {
   public render() {
     return (
-      <div className={styles.App}>
-        <header className={styles.AppHeader}>
-          <img src={logo} className={styles.AppLogo} alt="logo" />
-          <h1 className={styles.AppTitle}>Welcome to React</h1>
+      <div className={styles.app}>
+        <header className={styles.appHeader}>
+          <img src={logo} className={styles.appLogo} alt="logo" />
+          <h1 className={styles.appTitle}>Welcome to React</h1>
         </header>
-        <p className={styles.AppIntro}>
+        <p className={styles.appIntro}>
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
       </div>
